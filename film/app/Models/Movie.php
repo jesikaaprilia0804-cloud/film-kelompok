@@ -2,14 +2,18 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+
 
 class Movie extends Model
 {
+    use HAsfactory;
+
    protected $fillable =[
         'judul',
         'genre',
-        'tahun_rilis',
-        'sinopsis'
+        'tahun',
+        'detail',
     ];  
 }
